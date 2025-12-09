@@ -6,9 +6,10 @@ const HeroSection = () => {
     <section 
       className="relative h-screen bg-gray-900 flex items-center justify-center text-center"
       style={{ 
-        backgroundImage: `url('/images/restaurant-interior.jpg')`,
+       backgroundImage: `url('/restaurant-interior.webp')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        repeat: 'no-repeat',
       }}
     >
       {/* Tamni Overlay za bolji kontrast teksta (Luksuzni izgled) */}

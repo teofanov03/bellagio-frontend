@@ -1,1 +1,12 @@
 @import "tailwindcss";
+body {
+    /* Uklanja horizontalni skrol i osigurava da se sadržaj koji viri sa strane sakrije */
+    overflow-x: hidden; 
+    /* Takođe, uklonite sav potencijalni margin sa body-ja */
+    margin: 0; 
+}
+
+/* Opciono, ako imate neki globalni wrapper: */
+#root {
+    overflow-x: hidden; 
+}

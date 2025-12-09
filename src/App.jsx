@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react
 import HeroSection from './components/HeroSection';
 import MenuSection from './components/MenuSection';
 import ReservationForm from './components/ReservationForm';
-
+import ScrollToTopButton from './components/ScrollToTopButton';
 // Uvoz Admin Stranica (pretpostavka lokacije)
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
@@ -175,6 +175,7 @@ const HomePage = () => (
                 Founded on the passion for authentic Italian cuisine and the art of fine dining, Bellagio offers an experience that transports you straight to the heart of Tuscany.
             </p>
         </section>
+        <ScrollToTopButton />
     </>
 );
 
