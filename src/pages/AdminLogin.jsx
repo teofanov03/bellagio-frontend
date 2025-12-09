@@ -13,7 +13,7 @@ const AdminLogin = () => {
     const handleChange = (e) => {
         setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     };
-   
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
@@ -21,11 +21,15 @@ const AdminLogin = () => {
 
         try {
             // POST /api/v1/auth/login
-           await axios.post(`${API_URL}login`, {
+            const response = await axios.post(`${API_URL}login`, {
                 email: formData.email,
                 password: formData.password
             });
-           
+            
+            // 1. Čuvanje tokena
+            // Napomena: Backend šalje token u HTTP-only cookie-ju, što je sigurno.
+            // Ali, za Frontend manipulaciju i testiranje, ponekad je korisno sačuvati ga i u localStorage:
+            localStorage.setItem('adminToken', response.data.token);
             
             // 2. Preusmeravanje na Dashboard
             navigate('/admin'); 
