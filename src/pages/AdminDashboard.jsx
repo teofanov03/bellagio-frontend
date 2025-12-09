@@ -6,7 +6,7 @@ import ReservationTable from '../components/admin/ReservationTable';
 import DishManagement from '../components/admin/DishManagement';
 
 // Postavite osnovni URL Backenda
-const API_URL = 'http://localhost:5000/api/';
+const API_URL = 'https://bellagio-backend.onrender.com/api/';
 
 const AdminDashboard = () => {
     const [view, setView] = useState('reservations'); // 'reservations' ili 'menu'

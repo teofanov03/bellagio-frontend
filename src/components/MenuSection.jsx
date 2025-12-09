@@ -29,7 +29,7 @@ const MenuSection = () => {
     useEffect(() => {
         const fetchDishes = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/dishes'); 
+                const response = await axios.get('https://bellagio-backend.onrender.com/api/dishes'); 
                 setDishes(response.data.data);
                 setLoading(false);
             } catch (err) {

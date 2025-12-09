@@ -94,7 +94,7 @@ const ReservationForm = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:5000/api/reservations', reservationData);
+            const response = await axios.post('https://bellagio-backend.onrender.com/api/reservations', reservationData);
             
             if (response.data.success) {
                 setSubmissionStatus('success');

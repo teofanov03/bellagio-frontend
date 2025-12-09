@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 // ISPRAVKA 1: Komponenta sada prima dish I itemVariants prop
 const DishCard = ({ dish, itemVariants }) => { 
     const { name, description, price, isAvailable, category,imageUrl } = dish;
-    const BACKEND_BASE_URL = 'http://localhost:5000';
+    const BACKEND_BASE_URL = 'https://bellagio-backend.onrender.com';
     return (
         // KORISTIMO motion.div KAO JEDINI GLAVNI WRAPPER
         <motion.div
