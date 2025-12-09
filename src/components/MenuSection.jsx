@@ -9,8 +9,8 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            delayChildren: 0.1, // Odlaganje pre nego što počnu animacije dece
-            staggerChildren: 0.08, // Odlaganje između svake stavke
+            delayChildren: 0.3, // Odlaganje pre nego što počnu animacije dece
+            staggerChildren: 0.15, // Odlaganje između svake stavke
         },
     },
 };
